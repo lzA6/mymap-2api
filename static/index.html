@@ -1,0 +1,32 @@
+# static/index.html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>MyMap-2API 测试面板</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="chat-container">
+            <div id="chat-box"></div>
+            <div id="input-area">
+                <button id="upload-btn" title="上传文件">📎</button>
+                <input type="file" id="file-input" style="display: none;" />
+                <textarea id="message-input" placeholder="输入消息..."></textarea>
+                <button id="send-btn">发送</button>
+            </div>
+        </div>
+        <div id="settings-panel">
+            <h3>设置</h3>
+            <label for="api-key">API Key:</label>
+            <input type="password" id="api-key" value="1">
+            <label for="user-id">User ID (会话标识):</label>
+            <input type="text" id="user-id" value="test-user-123">
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

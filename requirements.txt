@@ -1,0 +1,7 @@
+# requirements.txt
+fastapi
+uvicorn[standard]
+pydantic-settings
+python-dotenv
+httpx[http2]
+cachetools
